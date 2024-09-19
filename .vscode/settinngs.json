@@ -1,0 +1,19 @@
+{
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "python.envFile": "${workspaceFolder}/.env",
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    },
+    "terminal.integrated.env.linux": { // TODO this dosent work
+        "BASH_INIT_COMMAND": "source .devcontainer/container-postStart.sh",
+        "ZSH_INIT_COMMAND": "source .devcontainer/container-postStart.sh"
+    }
+}
